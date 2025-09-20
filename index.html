@@ -3,9 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>My First GitHub Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #fff8f0;
+        }
+
+        .blinking-text {
+            font-size: 2em;
+            font-weight: bold;
+            animation: blinkColors 0.8s infinite;
+        }
+
+        @keyframes blinkColors {
+            0%   { color: red; }
+            20%  { color: orange; }
+            40%  { color: yellow; }
+            60%  { color: green; }
+            80%  { color: blue; }
+            100% { color: violet; }
+        }
+
+        .footer {
+            margin-top: 50px;
+            font-size: 1.2em;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
     <h1>Hello, World!</h1>
-    <p>I am designing a website for ugganibajji.com</p>
+    <h2>I am designing a website for <span class="blinking-text">ugganibajji.com</span></h2>
+
+    <div class="footer">
+        Designed by Pragnya 💖✨🧁
+    </div>
 </body>
 </html>
